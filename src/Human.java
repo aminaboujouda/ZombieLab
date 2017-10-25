@@ -12,8 +12,8 @@ import javax.imageio.ImageIO;
  * means a Human object can draw itself to a {@link Graphics} object.
  * <p>
 
- * @author Freddy Falcon
- * @version 1.0.0
+ * @author Mitchell Books
+ * @version 1.0.1
  * @since 1.0
  */
 class Human extends Sprite implements GraphicsUpdater {	
@@ -28,8 +28,14 @@ class Human extends Sprite implements GraphicsUpdater {
 	 */
 	Human( int x, int y ){
 		super(x, y, Settings.HUMAN_SIZE, Settings.HUMAN_SPEED, Settings.HUMAN_IMAGE);
-	}	
-	
+	}
+
+	/**
+	 * Update Position
+	 *
+	 * updates the position for human object.
+	 * overrides the {@link Sprite} update position function.
+	 */
 	@Override
 	public void updatePosition() {
     	if (x < dest_x) {
