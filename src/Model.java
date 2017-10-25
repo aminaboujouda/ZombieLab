@@ -79,7 +79,7 @@ public class Model implements GraphicsUpdater {
      */
     public void setSpriteDestinations(int x, int y) {
         if (player == null) {
-            System.out.println( 'Human Created' );
+            System.out.println( "Human Created" );
             player = new Human(x, y);
         } else {
 
